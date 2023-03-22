@@ -8,16 +8,16 @@
     tools:context=".ApresentaFilmeActivity">
 
     <TextView
-        android:textAllCaps="true"
         android:id="@+id/mTituloFilme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="10sp"
         android:layout_marginTop="20sp"
+        android:layout_marginBottom="10sp"
         android:shadowColor="#000"
         android:shadowRadius="5"
         android:text="O Apocalipe"
+        android:textAllCaps="true"
         android:textColor="#F10000"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -27,15 +27,15 @@
     <ImageView
         android:id="@+id/mImagemFilme"
         android:layout_width="250dp"
-        android:layout_height="350dp"
+        android:layout_height="300dp"
         android:layout_gravity="center_horizontal"
         android:scaleType="centerCrop"
         android:src="@drawable/apocalipe" />
 
     <LinearLayout
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="5dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
@@ -83,16 +83,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="10sp"
+            android:layout_marginLeft="5sp"
             android:text="Descrição"
             android:textColor="#000"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_margin="10dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
 
@@ -103,30 +103,39 @@
             android:numStars="1" />
 
         <TextView
-            android:layout_marginTop="5sp"
             android:id="@+id/mPontuacao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
             android:layout_marginRight="50sp"
             android:text="4.5"
             android:textColor="#000"
             android:textSize="20sp" />
 
         <ImageView
-            android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:src="@drawable/baseline_favorite" />
 
         <ImageView
-            android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:src="@drawable/baseline_share" />
 
     </LinearLayout>
+
+    <Button
+        android:layout_margin="5dp"
+        android:id="@+id/btnVoltar"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Voltar" />
 
 
 </LinearLayout>
